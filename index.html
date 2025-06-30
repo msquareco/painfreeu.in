@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dr. Anjum's Physio Rehab</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+
+    h1, h2 {
+      color: #004d40;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+
+    header {
+      background-color: #004d40;
+      color: #fff;
+      padding: 1rem 0;
+    }
+
+    header h1 {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 1rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('assets/hero.png') center/cover no-repeat;
+      color: #fff;
+      padding: 6rem 0;
+      text-align: center;
+      background-color: #00796b;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .section {
+      padding: 4rem 0;
+      background: #fff;
+    }
+
+    .section.alt {
+      background: #e0f2f1;
+    }
+
+    .services-list {
+      list-style: square inside;
+      margin-top: 1rem;
+    }
+
+    .image-text {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: center;
+      margin-top: 2rem;
+    }
+
+    .image-text img {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+
+    .testimonial {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    .testimonial img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+
+    blockquote {
+      background: #fff;
+      border-left: 4px solid #004d40;
+      margin: 1.5rem 0;
+      padding: 1rem;
+      font-style: italic;
+      background-color: #fafafa;
+    }
+
+    footer {
+      background-color: #004d40;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Dr. Anjum's Physio Rehab</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>Your Healing Journey Begins Here</h2>
+      <p>Specialized physiotherapy for pain relief, injury recovery, and long-term wellness.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Us</h2>
+      <div class="image-text">
+        <img src="assets/about.png" alt="About Dr. Anjum" />
+        <p>Dr. Anjum is a certified physiotherapist with 10+ years of experience in musculoskeletal and neurological rehab. Our clinic provides customized treatments to help you regain mobility and comfort.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section alt">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="image-text">
+        <img src="assets/services.png" alt="Services" />
+        <ul class="services-list">
+          <li>Musculoskeletal Physiotherapy</li>
+          <li>Neurological Rehabilitation</li>
+          <li>Sports Injury Management</li>
+          <li>Post-Operative Recovery</li>
+          <li>Home Visit Services</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="section">
+    <div class="container">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial">
+        <img src="assets/testimonial1.png" alt="Testimonial 1" />
+        <blockquote>
+          "Dr. Anjum is extremely professional and caring. I saw great improvement after just a few sessions!" — <strong>Ravi K.</strong>
+        </blockquote>
+      </div>
+      <div class="testimonial">
+        <img src="assets/testimonial2.png" alt="Testimonial 2" />
+        <blockquote>
+          "The home visit service was a lifesaver after my knee surgery. Highly recommended." — <strong>Meena S.</strong>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <img src="assets/contact.png" alt="Contact" style="width: 100%; margin-bottom: 2rem;" />
+      <iframe src="https://forms.gle/W3HtEtN8xX9EUt8P9" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Dr. Anjum's Physio Rehab. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
